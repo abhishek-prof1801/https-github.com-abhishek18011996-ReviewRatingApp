@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#00cdcd"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hi Mr/Mrs"
+        android:background="#ff7256"
+        android:textColor="#fffffa"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/my_name"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+     >
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Thank You!"
+         android:background="#ff7256"
+         android:textColor="#fffffa"
+         android:gravity="center"
+         android:textSize="20dp"/>
+     <TextView
+         android:textColor="#fffffa"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="You Opted for!"
+         android:background="#ff7256"
+         android:gravity="center"
+         android:textSize="20dp"/>
+     <TextView
+         android:textColor="#fffffa"
+         android:background="#ff7256"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="MailChimp Service"
+         android:gravity="center"
+         android:textSize="20dp"/>
+ </LinearLayout>
+    <ImageView
+        android:id="@+id/chimp_mail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:src="@drawable/mail_chimp"
+        android:clickable="true"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <TextView
+            android:textColor="#fffffa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:background="#ff7256"
+            android:gravity="center"
+            android:text="Enter Your API Key"
+            />
+        <EditText
+            android:id="@+id/my_api_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:hint="Enter Here"/>
+        <Button
+            android:onClick="recyclerViewOrigin"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit!"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
